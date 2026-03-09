@@ -1,7 +1,5 @@
 <div align = "center">
 
-# ![readme-header](./assets/header/readme-header.png)                            
-
 <samp>
 atabzo.com
 </samp>
@@ -12,9 +10,9 @@ atabzo.com
 
 ## to be added!
 
-[] posting the blogs
-[] visual journal with the photography spam
-[] making it more interactive and artistic
+[x] posting the blogs
+[ ] visual journal with the photography spam
+[ ] making it more interactive and artistic
 
 </samp>
 
