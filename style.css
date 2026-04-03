@@ -46,15 +46,15 @@ html {
 
 body {
     font-family: 'InstrumentSerif', serif;
-    background-color: #d2f1bd;
-    color: #068306;
+    background-color: #CCF5AC;
+    color: #2C497F;
     padding: 20px 20px;
 
 }    
 
 .overglade {
-  max-width: 50%;       /* Ensures it never gets wider than the screen */
-  height: auto;          /* Keeps the proportions correct */
-  margin: 20px auto;     /* Centers the image horizontally */
+  max-width: 50%;
+  height: auto;  
+  margin: 20px auto;
   transition: transform 0.3s ease;
 }
