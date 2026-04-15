@@ -1,10 +1,4 @@
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 html {
     visibility: hidden;
 }
@@ -40,21 +34,15 @@ html {
 @font-face {
   font-family: 'WindsorElongated';
   src: url('./fonts/WindsorElongated.ttf') format('truetype');
-  font-weight: normal;
+  font-weight: 100px;
   font-style: normal;
 }
 
 body {
-    font-family: 'InstrumentSerif', serif;
-    background-color: #CCF5AC;
-    color: #2C497F;
+    font-family: serif;
+    background-color: #f1ffe6;
+    color: #013101;
     padding: 20px 20px;
 
 }    
 
-.overglade {
-  max-width: 50%;
-  height: auto;  
-  margin: 20px auto;
-  transition: transform 0.3s ease;
-}
