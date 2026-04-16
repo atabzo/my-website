@@ -40,9 +40,27 @@ html {
 
 body {
     font-family: serif;
-    background-color: #f1ffe6;
-    color: #013101;
+    background-color: #f2ffd4;
+    color: #000000;
     padding: 20px 20px;
-
+    overflow:hidden;
 }    
 
+.flair {
+  position: fixed;
+  opacity: 0;
+  width: 50px;
+}
+
+  .fancy-link {
+      text-decoration: none;
+      background-image: linear-gradient(hotpink, hotpink);
+      background-size: 0% 2px;
+      background-position: 0 100%;
+      background-repeat: no-repeat;
+      transition: background-size 0.3s ease;
+    }
+
+    .fancy-link:hover {
+      background-size: 100% 2px;
+    }
