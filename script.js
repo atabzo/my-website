@@ -2,14 +2,6 @@ document.fonts.ready.then(() => {
   document.documentElement.style.visibility = 'visible'
 })
 
-gsap.from("h1, body", { 
-  opacity: 0, 
-  y: 50, 
-  duration: 1, 
-  
-  ease: "elastic.out(1, 0.5)" 
-});
-
 function playAnimation(shape) {
  // the timeline
   let tl = gsap.timeline();
@@ -30,7 +22,7 @@ function playAnimation(shape) {
 }
 
 let flair = gsap.utils.toArray(".flair");
-let gap = 50; // if you're nosy though, this number spaces the 'lil shapes out
+let gap = 10; // if you're nosy though, this number spaces the 'lil shapes out
 let index = 0;
 let wrapper = gsap.utils.wrap(0, flair.length);
 gsap.defaults({duration: 1})

@@ -41,7 +41,7 @@ html {
 body {
     font-family: serif;
     background-color: #f2ffd4;
-    color: #000000;
+    color: #364100;
     padding: 20px 20px;
     overflow:hidden;
 }    
@@ -68,5 +68,26 @@ body {
 li:hover {
     text-decoration: underline;
     text-decoration-style: wavy;
+    text-decoration-color: hotpink;
     text-decoration-thickness: 2px;
   }
+
+
+
+a {
+    color: rgb(79, 157, 37);
+  }
+
+
+a:hover {
+    text-decoration: underline;
+    text-decoration-style: wavy;
+    text-decoration-color: rgb(14, 99, 14);
+    text-decoration-thickness: 2px;
+  }
+
+
+h1 {
+
+    color:rgb(39, 108, 2)
+}
