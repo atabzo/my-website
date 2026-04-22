@@ -43,7 +43,7 @@ body {
     background-color: #f2ffd4;
     color: #364100;
     padding: 20px 20px;
-    overflow:hidden;
+    overflow-x:hidden;
 }    
 
 .flair {
