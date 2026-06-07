@@ -1,0 +1,29 @@
+body {
+  display: flex;
+  justify-content: center;      /* Centers horizontally */
+  align-items: center;          /* Centers vertically */
+  height: 100vh;                /* Full screen height */
+  margin: 0;                    /* Remove default spacing */
+}
+
+img {
+  max-width: 80%;               /* Image won't overflow */
+}
+
+footer {
+  position: fixed;              /* Sticks to viewport */
+  bottom: 0;                    /* Pins to bottom */
+  width: 100%;
+  display: flex;
+  gap: 20px;                    /* Space between buttons */
+  justify-content: center;
+  background: transparent;      /* See-through */
+  padding: 20px;
+}
+
+button {
+  background: transparent;
+  border: 1px solid #333;       /* Just an outline */
+  padding: 10px 20px;
+  cursor: pointer;
+}
