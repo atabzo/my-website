@@ -7,11 +7,49 @@
   <link rel="stylesheet" href="about-style.css">
 </head>
 
-<main> 
-  
-  <div class="container">
-  <img src="image.png" alt="campfire-flagship">
-</div>
+
+<img id="draggable-img" src="sticker.jpeg" alt="sticker">
+
+  <script>
+    const img = document.getElementById('draggable-img');
+ 
+    // Variables to track dragging
+    let isDragging = false;
+    let offsetX = 0;
+    let offsetY = 0;
+ 
+    // When user PRESSES the mouse button
+    img.addEventListener('mousedown', (e) => {
+      isDragging = true;
+      offsetX = e.clientX - img.getBoundingClientRect().left;
+      offsetY = e.clientY - img.getBoundingClientRect().top;
+    });
+ 
+    // When user MOVES the mouse
+    document.addEventListener('mousemove', (e) => {
+      if (!isDragging) return;
+      
+      const maxX = window.innerWidth - img.offsetWidth;
+      const maxY = window.innerHeight - img.offsetHeight;
+
+      const newX = Math.max(0, Math.min(e.clientX - offsetX, maxX));
+      const newY = Math.max(0, Math.min(e.clientY - offsetY, maxY));  
+ 
+      img.style.position = 'absolute';
+      img.style.left = newX + 'px';
+      img.style.top = newY + 'px';
+    });
+ 
+    // When user RELEASES the mouse button
+    document.addEventListener('mouseup', () => {
+      isDragging = false;
+    });
+  </script>
 
 
-</main>
+<footer>
+  <button onclick="location.href='index.html'">about me</button>
+  <button onclick="location.href='gallery.html'">gallery</button>
+</footer>
+</body>
+</html>

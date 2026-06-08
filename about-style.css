@@ -1,13 +1,21 @@
+@font-face {
+  font-family: 'cmu';
+  src: url('./fonts/cmu.ttf') format('truetype');
+  font-weight: 100 900;
+  font-style: normal;
+}
+
 body {
-  display: flex;
-  justify-content: center;      /* Centers horizontally */
-  align-items: center;          /* Centers vertically */
-  height: 100vh;                /* Full screen height */
-  margin: 0;                    /* Remove default spacing */
+  display: flex;               /* Activates flexbox layout */
+  justify-content: center;     /* Centers horizontally */
+  align-items: center;         /* Centers vertically */
+  height: 100vh;               /* Full viewport height */
+  padding-bottom: 80px;        /* Makes room for fixed footer */
 }
 
 img {
-  max-width: 80%;               /* Image won't overflow */
+  max-width: 30%;               /* Image won't overflow */
+  cursor: grabbing;
 }
 
 footer {
@@ -23,7 +31,14 @@ footer {
 
 button {
   background: transparent;
-  border: 1px solid #333;       /* Just an outline */
+  border: 0.5px solid var(--color-border-secondary);  /* Just an outline */
   padding: 10px 20px;
-  cursor: pointer;
+  transition: all 0.2s ease;   /* Smooth animation */
+  font-family: 'cmu', 'Times New Roman', Times, serif;
+  font-size: 16px;
+  color:rgb(76, 0, 255)
+}
+
+button:hover {
+  background: var(--color-background-secondary);      /* Fills on hover */
 }

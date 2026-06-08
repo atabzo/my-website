@@ -89,3 +89,12 @@ function animateImage() {
 
   index++;
 }
+
+function handleClick(page) {
+  // Navigate to that page
+  window.location.href = '/' + page;
+  
+  // Or smooth scroll to a section
+  document.querySelector('#about').scrollIntoView();
+}
+
