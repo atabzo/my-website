@@ -3,20 +3,18 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>about!</title>
+  <title>atabzo</title>
   <link rel="stylesheet" href="about-style.css">
 </head>
 
+<img id="draggable-img" src="sun.png" alt="sticker">
 
-<img id="draggable-img" src="meow.png" alt="sticker">
-
-  <script>
+<script>
     const img = document.getElementById('draggable-img');
     // Variables to track dragging
     let isDragging = false;
     let offsetX = 0;
     let offsetY = 0;
- 
     // When user PRESSES the mouse button
     img.addEventListener('mousedown', (e) => {
       isDragging = true;
@@ -24,6 +22,7 @@
       offsetY = e.clientY - img.getBoundingClientRect().top;
     });
  
+
 // When user MOVES the mouse
     document.addEventListener('mousemove', (e) => {
       // Only move if dragging AND left mouse button is currently pressed
@@ -47,12 +46,14 @@
   </script>
 
 
-<img class="sticker" src="fly.jpg">
+<img class="sticker" src="fly-nobg.png">
 
 
 <footer>
-  <button onclick="location.href='index.html'">about me</button>
-  <button onclick="location.href='gallery.html'">gallery</button>
+  <button onclick="location.href='index.html'">wiki</button>
+  <button onclick="location.href='gallery.html'">images</button>
+  <button onclick="location.href='contact.html'">dexterity</button>
+
 </footer>
 </body>
 </html>

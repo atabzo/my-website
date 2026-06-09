@@ -86,9 +86,14 @@ html {
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'polysans';
+  src: url('./fonts/PolySans-Slim.woff2') format('truetype');
+}
+
 body {
-    font-family: 'cmu';
-    background-color: #ffffff;
+    font-family: 'polysans';
+    background-color: rgb(255, 239, 213)
     color: #364100;
     padding: 20px 20px;
     overflow-x:hidden;

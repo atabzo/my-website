@@ -5,15 +5,13 @@
   font-style: normal;
 }
 
-
-
 body {
   display: flex;               /* Activates flexbox layout */
   justify-content: center;     /* Centers horizontally */
   align-items: center;         /* Centers vertically */
   height: 100vh;               /* Full viewport height */
   padding-bottom: 80px;        /* Makes room for fixed footer */
- background-color: #ffffff;
+ background-color: #f3cfcf;
  overflow: hidden;              /* Hides any overflow */
 }
   
