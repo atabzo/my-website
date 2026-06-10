@@ -6,54 +6,16 @@
   <title>atabzo</title>
   <link rel="stylesheet" href="about-style.css">
 </head>
+<h1>sparklingsunbeams</h1>
+<body>
+<img id="draggable-img" src="white-painting.jpg" alt="sticker">
+</body>
 
-<img id="draggable-img" src="sun.png" alt="sticker">
+<footer>  <button onclick="location.href='index.html'">wiki/projects</button>
+  <button onclick="location.href='gallery.html'">photography</button>
 
-<script>
-    const img = document.getElementById('draggable-img');
-    // Variables to track dragging
-    let isDragging = false;
-    let offsetX = 0;
-    let offsetY = 0;
-    // When user PRESSES the mouse button
-    img.addEventListener('mousedown', (e) => {
-      isDragging = true;
-      offsetX = e.clientX - img.getBoundingClientRect().left;
-      offsetY = e.clientY - img.getBoundingClientRect().top;
-    });
- 
-
-// When user MOVES the mouse
-    document.addEventListener('mousemove', (e) => {
-      // Only move if dragging AND left mouse button is currently pressed
-      if (!isDragging || !(e.buttons & 1)) return;
-      
-      const maxX = window.innerWidth - img.offsetWidth;
-      const maxY = window.innerHeight - img.offsetHeight;
-
-      const newX = Math.max(0, Math.min(e.clientX - offsetX, maxX));
-      const newY = Math.max(0, Math.min(e.clientY - offsetY, maxY));  
- 
-      img.style.position = 'absolute';
-      img.style.left = newX + 'px';
-      img.style.top = newY + 'px';
-    });
-    
-    // When user RELEASES the mouse button
-    document.addEventListener('mouseup', () => {
-      isDragging = false;
-    });
-  </script>
-
-
-<img class="sticker" src="fly-nobg.png">
-
-
-<footer>
-  <button onclick="location.href='index.html'">wiki</button>
-  <button onclick="location.href='gallery.html'">images</button>
-  <button onclick="location.href='contact.html'">dexterity</button>
+  <button onclick="location.href='contact.html'">dexterity/art</button>
 
 </footer>
-</body>
+
 </html>

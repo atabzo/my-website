@@ -1,3 +1,29 @@
+document.addEventListener("DOMContentLoaded", () => {
+
+const title = document.querySelector("h1");          // one element
+const sections = document.querySelectorAll("section"); // all sections (a list)
+const hero = document.querySelector(".hero");         // by class
+const intro = document.querySelector("#intro");       // by id
+// Register ScrollTrigger
+gsap.registerPlugin(ScrollTrigger);
+
+// Setup Lenis
+const lenis = new Lenis();
+lenis.on("scroll", ScrollTrigger.update);
+gsap.ticker.add((time) => lenis.raf(time * 1000));
+gsap.ticker.lagSmoothing(0);
+
+// Now your animations
+gsap.from("h1", {
+  opacity: 0,
+  y: -50,
+  duration: 1
+});
+  // your code goes here
+
+});
+
+
 document.fonts.ready.then(() => {
   document.documentElement.style.visibility = 'visible'
 })

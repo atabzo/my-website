@@ -93,11 +93,18 @@ html {
 
 body {
     font-family: 'polysans';
-    background-color: rgb(255, 239, 213)
+    background-color: hsl(111, 19%, 86%);
     color: #364100;
     padding: 20px 20px;
-    overflow-x:hidden;
+    min-height: 100vh; 
 }    
+
+section {
+  height: 100vh;           /* each section = one full screen */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 .flair {
   position: fixed;
@@ -156,7 +163,7 @@ a:hover {
   }
 } 
 .cloud-block {
-  position: relative;
+  position: absolute;
   max-width: 800px;
   margin: 0 auto;   /* centers the whole block */
 }
@@ -165,5 +172,3 @@ a:hover {
   display: block;
   width: 400px;
 }
-
-
