@@ -112,6 +112,54 @@ html {
   width: 27px;
 }
 
+nav {
+  position: fixed;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  /* height: 500px; */
+  z-index: 10;
+}
+
+nav div {
+  max-width: 100%;
+  background-color: #DDE2F6;
+  padding: 8px;
+  gap: 8px;
+  font-family: "polysans-r";
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 24px;
+  transition: 0.2s ease-in-out;
+}
+
+nav div a + a {
+  content: '2';          /* required — without this the element doesn't render */
+
+  border-left: 1px solid #aaa;
+  padding-left: 8px;
+  border-radius: 0; /* add this */
+
+}
+
+nav div:hover {
+  background-color: #DDE2F6;
+  font-family: "polysans-r";
+}
+
+nav a {
+  display: inline-block;
+  border-radius: 24px;
+  padding: 0 8px;
+  border: 2px solid transparent;
+  box-sizing: border-box;
+}
+
+
+nav a:hover {
+  text-decoration: underline;
+}
 
 a {
     color: rgb(56, 22, 51);
@@ -122,7 +170,7 @@ a:hover {
     text-decoration: underline;
     text-decoration-style: wavy;
     text-decoration-color: rgb(33, 7, 140);
-    text-decoration-thick ness: 2px;
+    text-decoration-thickness: 2px;
   }
 
 
