@@ -52,7 +52,7 @@ p {
 img {
   justify-self: center;
   align-self: center;
-  max-width: 20vw;               /* Image won't overflow */
+  max-width: 40vw;               /* Image won't overflow */
   object-fit: cover;
   margin-bottom: 100vw;  /* Adjust this number to move it down */
 }

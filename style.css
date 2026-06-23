@@ -17,16 +17,6 @@ html {
   font-style: normal;
 }
 
-.background-image {
-  height: 100%;
-  left: 0;
-  object-fit: cover;
-  pointer-events: none;
-  position: absolute;
-  top: 0;
-  width: 100%;
-  z-index:0.1;
-}
 
 @font-face {
   font-family: 'hel2';
@@ -74,6 +64,13 @@ html {
 }
 
 
+@font-face {
+  font-family: 'helvetica';
+  src: url('./fonts/Helvetica.ttf') format('truetype');
+  font-weight: 100 900;
+  font-style: normal;
+}
+
 
 @font-face {
   font-family: 'junicode';
@@ -102,26 +99,32 @@ html {
   src: url('./fonts/PolySans-Slim.woff2') format('truetype');
 }
 
-body {
-    font-family: 'polysans';
-    background-color: hsl(111, 19%, 86%);
-    color: #364100;
-    padding: 20px 20px;
-    min-height: 100vh; 
-}    
 
-section {
-  height: 100vh;           /* each section = one full screen */
-  display: flex;
-  justify-content: center;
-  align-items: center;
+@font-face {
+  font-family: 'polysans-r';
+  src: url('./fonts/PolySans-Relax.woff2') format('truetype');
 }
 
-.flair {
+
+.flower {
   position: fixed;
   opacity: 0;
   width: 27px;
 }
+
+
+a {
+    color: rgb(56, 22, 51);
+  }
+
+
+a:hover {
+    text-decoration: underline;
+    text-decoration-style: wavy;
+    text-decoration-color: rgb(33, 7, 140);
+    text-decoration-thick ness: 2px;
+  }
+
 
 li:hover {
     text-decoration: underline;
@@ -130,98 +133,31 @@ li:hover {
     text-decoration-thickness: 2px;
   }
 
-a {
-    color: rgb(56, 22, 51);
-  }
- 
-#tooltip-box {
-  position: absolute;
-  display: none;
-  pointer-events: none;
-  left: 50%;
-  transform: translateX(-50%);
-  bottom: calc(100% + 8px);
-  z-index: 999;
-  background-color: rgba(17, 27, 33, 0.85); 
-  background-color: var(--tooltip-bg);
-  opacity: 0;
-  transform: translateX(-50%) scale(0.8);
-  transition: opacity 0.2s ease, transform 0.2s ease;
-
-  }
-
-.about {
-  position: relative; /* so it sits above the cloud in z-order */
-  max-width: 600px;
-  margin: 0 auto;
-  padding: 200px 20px 40px 20px; /* top padding replaces the old margin-top */
-  font-size: 20px;
-}
-
-a:hover {
-    text-decoration: underline;
-    text-decoration-style: wavy;
-    text-decoration-color: rgb(14, 99, 14);
-    text-decoration-thickness: 2px;
-  }
-
 
 .bhanu:hover {
-     text-decoration: underline;
-    text-decoration-style: wavy;
-    text-decoration-color: rgb(12, 9, 63);
-    text-decoration-thickness: 5px;
+    text-decoration: underline;
+    text-decoration-color: rgb(0, 0, 0);
+    text-decoration-thickness: 10px;
 }
 
 
+body {
+    font-family: 'polysans';
+    background-color: hsl(156, 100%, 76%);
+    padding: 20px 20px;
+    min-height: 100vh; 
+}    
 
-/* 2. The Tooltip Box (Using Pseudo-element) */
-.message-container::before {
-  content: attr(data-tooltip); /* Pulls text from the HTML attribute */
-  position: absolute;
-  
-  /* Positioning functions */
-  bottom: calc(100% + 8px); 
-  left: 50%;
-  transform: translateX(-50%) scale(0.9);
-  
-  /* Styling */
-  background-color: rgba(17, 27, 33, 0.9); /* Dark WhatsApp theme */
-  color: #fff;
-  padding: 5px 8px;
-  border-radius: 5px;
-  font-size: 11px; /* Small text */
-  white-space: nowrap;
-  z-index: 10;
-  
-  /* Animation setup */
-  opacity: 0;
-  pointer-events: none;
-  transition: opacity 0.15s ease, transform 0.15s ease;
+.about {
+  position: relative; 
+  max-width: 1000px;
+  margin: 0 auto;
+  font-size: 20px;
+  color:rgb(46, 40, 32)
 }
 
-/* 3. The Little Arrow/Tail */
-.message-container::after {
-  content: "";
-  position: absolute;
-  bottom: calc(100% + 3px);
-  left: 50%;
-  transform: translateX(-50%);
-  
-  /* Border trick to create a tiny triangle */
-  border-width: 5px 5px 0 5px;
-  border-style: solid;
-  border-color: rgba(17, 27, 33, 0.9) transparent transparent transparent;
-  
-  /* Animation setup */
-  opacity: 0;
-  pointer-events: none;
-  transition: opacity 0.15s ease;
-}
-
-/* 4. Hover Effects (Trigger) */
-.message-container:hover::before,
-.message-container:hover::after {
-  opacity: 1;
-  transform: translateX(-50%) scale(1); /* Resets scale for the pop effect */
+.title {
+  font-family: "polysans-r";
+  font-size: 100px;
+  color: rgb(107, 0, 0);
 }

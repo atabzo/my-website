@@ -20,10 +20,10 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   // imagetrail setup
-  let flair = gsap.utils.toArray(".flair");
+  let flower = gsap.utils.toArray(".flower");
   let gap = 10;
   let index = 0;
-  let wrapper = gsap.utils.wrap(0, flair.length);
+  let wrapper = gsap.utils.wrap(0, flower.length);
   gsap.defaults({ duration: 1 });
 
   let mousePos = { x: 0, y: 0 };
@@ -43,7 +43,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   function animateImage() {
     let wrappedIndex = wrapper(index);
-    let img = flair[wrappedIndex];
+    let img = flower[wrappedIndex];
     gsap.killTweensOf(img);
     gsap.set(img, { clearProps: "all" });
     gsap.set(img, {
