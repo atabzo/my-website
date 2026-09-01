@@ -1,0 +1,188 @@
+html {
+    overflow-x: hidden;
+
+}
+
+nav {
+  position: fixed;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  z-index: 10;
+}
+
+nav div {
+  max-width: 100%;
+  background-color: #ddf6df;
+  padding: 8px;
+  gap: 8px;
+  font-family: "polysans-r";
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 24px;
+  transition: 0.2s ease-in-out;
+}
+
+nav div a + a {
+  content: '2';      
+  border-left: 1px solid #aaa;
+  padding-left: 8px;
+  border-radius: 0; /* add this */
+}
+
+nav div:hover {
+  background-color: #DDE2F6;
+  font-family: "polysans-r";
+}
+
+nav a {
+  display: inline-block;
+  border-radius: 24px;
+  padding: 0 8px;
+  border: 2px solid transparent;
+  box-sizing: border-box;
+}
+
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+.honeycomb {
+  position: absolute;
+  top:2px;
+  right:0px;  
+  max-width: 400px;  /* won't stretch beyond this */
+  min-width: 200px;  /* won't shrink below this */  /* maintains aspect ratio */
+}
+
+
+.bees {
+  position: absolute; 
+  width: 20px; 
+  height: 20px; 
+}
+
+.bee-sprite {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  image-rendering: pixelated;
+  opacity: 0;
+}
+
+.bee-right { opacity: 1; } /* right is the default facing */
+
+.bee.facing-left .bee-right { opacity: 0; }
+.bee.facing-left .bee-left  { opacity: 1; }
+
+.intro-title {
+  font-family: "polysans-r";
+}
+
+
+h1 {
+  font-size: clamp(2.5rem, 8vw, 15rem); /* scales with screen */
+  font-weight: 800;                     /* boldness: 100–900 */
+  color: hsl(0, 0%, 7%);                          /* near black */
+  text-align: center;
+  line-height: 0;                     /* tight spacing between lines */
+  letter-spacing: 0em;             /* slight tightening, looks cleaner at big sizes */
+  font-family: "polysans-r";
+}
+
+h1 + p {
+  font-size: clamp(1rem, 2vw, 2rem);
+  font-weight: 600;
+  color: #3b3b8f;                       /* the dark blue-purple from your screenshot */
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 2vw;
+}
+
+.intro-title {
+  position:relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 200px;
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  background-color: #95ff009d;            /* the lavender */
+  border-top: 8px dashed #000000;         /* dotted line on top */
+  border-bottom: 8px dashed #000000;      /* dotted line on bottom */
+  padding: 0px 0;                      /* breathing room above and below text */
+}
+
+a {
+    color: rgb(56, 22, 51);
+  }
+
+
+a:hover {
+    text-decoration: underline;
+    text-decoration-style: wavy;
+    text-decoration-color: rgb(33, 7, 140);
+    text-decoration-thickness: 2px;
+  }
+
+li:hover {
+    text-decoration: underline;
+    text-decoration-style: wavy;
+    text-decoration-color: #0e6314;
+    text-decoration-thickness: 2px;
+  }
+  
+.bhanu:hover {
+    text-decoration: underline;
+    text-decoration-color: rgb(0, 0, 0);
+    text-decoration-thickness: 10px;
+}
+
+
+body {
+    font-family: 'polysans';
+    background-color: hsl(156, 100%, 76%);
+    padding: 20px 20px;
+    min-height: 100vh; 
+}    
+
+.about {
+  position: relative; 
+  max-width: 1000px;
+  margin: 0 auto;
+  font-size: 20px;
+  color:rgb(46, 40, 32)
+}
+
+.unselectable-image {
+    -webkit-user-select: none;  /* Safari */
+    -moz-user-select: none;     /* Firefox */
+    -ms-user-select: none;      /* IE 10+ */
+    user-select: none;          /* Standard */
+    
+    /* Prevents the ghost image when trying to drag */
+    -webkit-user-drag: none;
+    user-drag: none; 
+}
+
+.button-row {
+  display: flex;
+  gap: 10px;
+  margin-top: 1rem;
+}
+
+.button-row img {
+  display: block;
+  image-rendering: pixelated; /* keeps the pixel art crisp at native size */
+}
+
+.button-row a {
+  transition: transform 0.15s ease, filter 0.15s ease;
+}
+
+.button-row a:hover {
+  transform: translateY(-5px);
+}

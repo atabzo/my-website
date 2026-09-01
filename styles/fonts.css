@@ -1,0 +1,99 @@
+@font-face {
+  font-family: 'Imbue';
+  src: url('./fonts/Imbue.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'hel';
+  src: url('./fonts/Helvetica.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'hel2';
+  src: url('./fonts/light.otf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'hel3';
+  src: url('./fonts/roman.otf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'InstrumentSerif';
+  src: url('./fonts/InstrumentSerif-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PlayfairDisplay';
+  src: url('./fonts/PlayfairDisplay.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'WindsorElongated';
+  src: url('./fonts/WindsorElongated.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'geist';
+  src: url('./fonts/Geist-VariableFont_wght.ttf') format('truetype');
+  font-weight: 100 900;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'helvetica';
+  src: url('./fonts/Helvetica.ttf') format('truetype');
+  font-weight: 100 900;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'junicode';
+  src: url('./fonts/Junicode.ttf') format('truetype');
+  font-weight: 100 900;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'ppmori';
+  src: url('./fonts/PPMori-Regular.otf') format('truetype');
+  font-weight: 100 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'cmu';
+  src: url('./fonts/cmu.ttf') format('truetype');
+  font-weight: 100 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'polysans';
+  src: url('./fonts/PolySans-Slim.woff2') format('truetype');
+}
+
+
+@font-face {
+  font-family: 'polysans-r';
+  src: url('./fonts/PolySans-Relax.woff2') format('truetype');
+}
