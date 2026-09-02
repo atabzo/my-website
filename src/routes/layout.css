@@ -1,0 +1,73 @@
+@import 'tailwindcss';
+@plugin '@tailwindcss/typography';
+
+html {
+    margin: 10vw
+}
+
+
+@font-face {
+    font-family: 'cmu';
+    src: url('./fonts/cmu.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: "PixelHackers";
+    src: url("/fonts/PixelHackers.woff2") format("woff2");
+    font-weight: 400;
+    font-style: normal;
+    font-display: block;
+}
+
+@font-face {
+    font-family: "PolySans";
+    src: url("/fonts/PolySans-Slim.woff2") format("woff2");
+    webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-weight: 200;
+    font-style: normal;
+    font-display: block;
+}
+
+
+.content{
+    padding: 10vw;
+    position: relative;
+}
+
+.banner{
+    display: grid;
+    place-items: center; 
+}
+
+body {
+    font-size: 1.2rem;
+    background-color: rgb(249, 9, 9);
+    font-family: 'PixelHackers','Times New Roman', Times, serif;
+}
+
+
+p {
+    margin-top: 10px;
+}
+
+.content {
+    color:white;
+}
+
+
+.doodle {
+  position: absolute;
+  z-index: -1;          /* Keeps doodle behind text */
+  pointer-events: none; /* Prevents image box from blocking text clicks */
+  opacity: 0.25;        /* Fades sketch so text stays readable */
+}
+
+.star {
+  top: 0px;
+  right: -30px;
+  width: 140px;         /* Control graphic size directly */
+}

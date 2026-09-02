@@ -1,0 +1,28 @@
+<script lang="ts">
+	interface Badge {
+		src: string;
+		alt: string;
+		href?: string;
+	}
+
+	let { badges = [] }: { badges: Badge[] } = $props();
+</script>
+
+<div style="line-height: 18px; margin-top: 20px;">
+	{#each badges as badge (badge.alt)}
+		{#if badge.href}
+			<!-- eslint-disable svelte/no-navigation-without-resolve -->
+			<a
+				href={badge.href}
+				target="_blank"
+				class="group bg-overlay-0 bg-overlay-1 border inline-block me-1"
+			>
+				<img src={badge.src} alt={badge.alt} style="image-rendering: pixelated" />
+			</a>
+		{:else}
+			<div class="group bg-overlay-0 bg-overlay-1 border inline-block me-1">
+				<img src={badge.src} alt={badge.alt} style="image-rendering: pixelated" />
+			</div>
+		{/if}
+	{/each}
+</div>
